@@ -1,0 +1,27 @@
+{
+  "name": "flash-document-title",
+  "description": "flash a notification message in the tab title area",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/flash-document-title/issues"
+  },
+  "devDependencies": {
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/flash-document-title",
+  "keywords": [
+    "document",
+    "notification",
+    "tab"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/flash-document-title.git"
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}

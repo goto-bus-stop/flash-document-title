@@ -6,6 +6,8 @@ If the tab is hidden, this module prepends the given argument before the current
 Each second, it animates by prepending and removing a `! ` character.
 Once the tab is no longer hidden, the document title is reset.
 
+![screenshot](https://i.imgur.com/llB1hvQ.png)
+
 [![npm][npm-image]][npm-url]
 [![travis][travis-image]][travis-url]
 [![standard][standard-image]][standard-url]

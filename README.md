@@ -33,6 +33,28 @@ var flashDocumentTitle = require('flash-document-title')
 flashDocumentTitle('💬 someone said something!')
 ```
 
+Easily use it in choo views by creating a store that adds an event listener:
+
+```js
+var app = choo()
+app.use(flashStore)
+function flashStore (state, emitter) {
+  emitter.on('notify', flashDocumentTitle)
+}
+
+app.route('/', function (state, emit) {
+  return html`
+    <body>
+      <button onclick=${onclick}>Notify me soon</button>
+    </body>
+  `
+  function onclick () {
+    setTimeout(function () { emit('notify', 'NOTIFICATION TIME!') }, 5000)
+  }
+})
+app.mount('body')
+```
+
 ## License
 
 [Apache-2.0](LICENSE.md)

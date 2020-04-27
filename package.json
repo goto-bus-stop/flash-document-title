@@ -7,7 +7,7 @@
     "url": "https://github.com/goto-bus-stop/flash-document-title/issues"
   },
   "devDependencies": {
-    "tape": "^4.8.0"
+    "tape": "^5.0.0"
   },
   "homepage": "https://github.com/goto-bus-stop/flash-document-title",
   "keywords": [
